@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>hoshi_portfoliosite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="css/stylesheet_workpage.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+<body>
+  <header>
+    <div class="naviber">
+      <div class="logo">
+          <a href="index.html"><img src="img/logo1.png"></a>
+      </div>
+      <div class="navi">
+        <div class="navi-item">
+            <a href="portfolio_workpage.html">
+                <img class="work-icon" src="img/works_icon.png">
+                <p>Work</p>
+            </a>
+        </div>
+        <div class="navi-item">
+            <a href="portfolio_aboutpage.html">
+                <img class="about-icon" src="img/about_icon.png">
+                <p>About</p>
+            </a>
+        </div>
+        <div class="navi-item">
+            <a href="index.html#contact">
+                <img class="contact-icon" src="img/contact_icon.png">
+                <p>Contact</p>
+            </a>
+        </div> 
+      </div>
+      <!-- モバイル版用ハンバーガーメニュー -->
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="portfolio_workpage.html">Work</a></li>
+          <li><a class="menu__item" href="portfolio_aboutpage.html">About</a></li>
+          <li><a class="menu__item" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div><!-- /モバイル版 -->
+    </div>
+  </header>
+  <div class="background-design">
+    <main>
+      <!-- トップ------------------->
+      <div class="work-select-container">
+        <div class="work-selects">
+          <a href="#design" class="design-box">Design</a>
+          <a href="#website" class="website-box" >Website</a>
+          <a href="#others" class="others-box">Others</a>
+        </div>
+      </div>
+      <!-- WORK一覧------------------->
+      <div class="work-container">
+        <!-- DESIGN -->
+        <div class="work-design" id="design">
+          <h1>Design</h1>
+          <hr class="title-border" />
+          <h2 class="headline">バナーデザイン</h2> 
+          <div class="design-grid">
+            <div class="design-item">
+              <img src="img\banner_whitening.png" alt="">
+            </div>
+            <div class="design-item">
+              <img src="img\banner_五反田.png" alt="">
+            </div>
+            <div class="design-item">
+              <img src="img\sale.png" alt="">
+            <!-- </div>       
+            <div class="design-item">
+              <img src="img\lp_denntist.png" alt="">
+              <p>ー sale バナーデザイン ー</p>
+            </div>       -->
+          </div>
+        </div>
+        <!-- WEBSITE -->
+        <div class="work-website" id="website">
+          <h1>WebSite</h1>
+          <hr class="title-border" />                  
+          <div class="website-grid">
+            <div class="website-item">
+              <img src="img\site_axis.png" alt="">
+              <hr class="item-border" />
+            </div>
+            <div class="website-item">
+              <img src="img\site_cafe.png" alt="">
+              <hr class="item-border" />
+            </div>         
+            <div class="website-item">
+              <img src="img\site_working.png" alt="">
+            </div>                                     
+          </div>
+        </div>
+        <!-- OTHERS -->
+        <div class="work-others" id="others">
+          <h1>Others</h1>
+          <hr class="title-border" /> 
+          <div class="others-grid">
+            <div class="others-item">
+              <img src="img\card_salon.png" alt="">
+              <p>card</p>
+            </div>
+            <div class="others-item">
+              <img src="img\matelial_canva.png" alt="">
+              <p>説明資料</p>
+            </div>            
+          </div>
+        </div>
+      </div>  
+    </main>
+  </div>
+  <footer>
+  </footer>
+</body>
+</html>

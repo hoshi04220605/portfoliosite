@@ -1,0 +1,747 @@
+@charset "UTF-8";
+
+body{
+    background: linear-gradient(90deg, #ffedec,#fff5c5);
+   }
+
+h1{
+    position: relative;
+    text-align: center;
+    font-size: 33px;
+    color: #382a0d;  
+    font-family: Yu Mincho, "游明朝", "Hiragino Mincho ProN", "MS PMincho", serif; 
+}
+
+.title-border{
+    position: relative;
+	height: 1px;
+    width: 12%;
+	border-width: 0;
+	background-color: #ffb2b2;
+	background-image: -webkit-linear-gradient(left,
+	#fde1e1 0%,#ffb2b2 50%,#fde1e1 100%);
+	background-image:         linear-gradient(90deg,
+	#fde1e1 0%,#ffb2b2 50%,#fde1e1 100%);
+}
+h2,h3,p{
+    font-family: Yu Mincho, "游明朝", "Hiragino Mincho ProN", "MS PMincho", serif;
+    color: #110e05;
+}
+h3{
+    font-size: 18px;
+}
+p{
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: #382a0d;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color:#fff0cc;
+}
+.naviber{
+    width: 980px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    background-image: url("image.jpg");
+    padding-left: 50px;
+}
+
+.navi{
+    width: 30%;
+   	display: grid;
+	gap: 1px;
+	grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding-right: 50px;
+}
+.navi-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navi-item img{
+    margin: 0 auto;     
+    display: block;
+    height: 100%;
+    max-height: 30px;
+    object-fit: contain;
+}
+.navi-item p{
+    text-align: center;
+    font-size: 16px;
+    color: #97958F;
+}
+@media screen and (min-width: 769px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+
+/* ----トップ---- */
+.intro-container{
+    margin-top: 70px;
+    height: auto;
+    width: auto;
+}
+.intro-wrapper{
+    width: 980px;
+    margin: 20px auto 0 auto;
+    padding: 50px 0;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.name-area{
+    width: 550px;
+    height: auto;  
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.name-area .myimg{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+.name-area .name{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.name-area h2 {
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+.others-area{
+    padding-top: 32px;
+}
+.others {
+    display: flex;
+    align-items: center; 
+    gap: 8px; 
+}
+.others img{
+    align-items: center; 
+    height: 1em;  
+    font-size: 18px;
+}
+.name-border{
+    position: relative;
+	height: 1px;
+    width: 60%;
+	border-width: 0;
+	background-color: #ffb2b2;
+	background-image: -webkit-linear-gradient(left,
+	#fde1e1 0%,#ffb2b2 50%,#fde1e1 100%);
+	background-image:         linear-gradient(90deg,
+	#fde1e1 0%,#ffb2b2 50%,#fde1e1 100%);
+}
+.coment-area{
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.coment-area p{
+    text-align: center;
+}
+
+/* ----スキル---- */
+.skill-container{
+    margin-top: 8px;
+}
+.skill-wrapper{
+    width: 980px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 70px 0;
+    margin: 0 auto;
+}
+/* スキル×3box */
+.skill-box-wrapper{
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 30px;
+    display: grid;
+	gap: 1px;
+	grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 40px;
+}
+.design-skill{
+    height: 400px;
+    background-color: rgba(255,239,152,0.2);
+    margin: 10px 5px;
+    border-radius: 3px;
+}
+.website-skill{
+    height: 400px;
+    background-color: rgba(255, 246, 246, 0.5);
+    margin: 10px 5px;
+    border-radius: 3px;
+}
+.other-skill{
+    height: 400px;
+    background-color:rgba(247, 187, 188, 0.2);
+    margin: 10px 5px;
+    border-radius: 3px;
+}
+.skill-box{
+    width: 100%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-box img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+.skill-box h2{
+    position: relative;
+    display: inline-block;
+    padding: 0 55px 0 ;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-style: italic;
+    color: #725926;
+}
+.skill-box h2:before,
+.skill-box h2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: #725926;
+}
+.skill-box h2:before {
+    left: 30px;
+}
+.skill-box h2::after {
+     right: 30px; 
+}
+.skill-box p{
+    text-align: center;
+}
+/* 得意なデザイン */
+.skill-coment{
+    width: 90%;
+    margin: 20px auto;
+    padding-bottom: 20px;
+}
+.skill-coment p{
+    text-align: center;
+    color: #5a5853;
+}
+.skill-border{
+	height: 1px;
+    width: 80%;
+	border-width: 0;
+	background-color: #ebc06c;
+}
+.skill-textarea{
+    width: 80%;
+    position: relative;
+    border: solid 1px #ebc06c;
+    padding: 30px 20px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    color: #333;
+    font-weight: 400;
+    display: block;
+    box-sizing: border-box;
+    text-align: center; 
+    margin-inline: auto;
+    margin-top: 10px;
+}
+.skill-textarea::before,
+.skill-textarea::after {
+    content:'';
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    rotate: 45deg;
+}
+
+.skill-textarea::before {
+  border-left: solid 1px #ebc06c;
+  top:2px;
+  left: 2px;
+}
+
+.skill-textarea::after {
+  border-right: solid 1px #ebc06c;
+  bottom:2px;
+  right: 2px;
+}
+.skill-textarea h2{
+    position: relative;
+    font-size: 21px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    padding-left: 1em;
+}
+.skill-textarea h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 1em;
+  display: block;
+  width: 23%;
+  height: 4px;
+  background: linear-gradient(135deg, transparent 25%, #ffadad 25%, #ffadad 50%, transparent 50%, transparent 75%, #ffadad 75%, #ffadad);
+  background-size: 4px 4px;
+  z-index: 0;
+}
+.skill-textarea h3{
+    line-height: 1.5em;
+    padding-left: 1em;
+    font-weight: 600;
+}
+.skill-textarea p{
+    margin-bottom: 10px;
+    padding-left: 3em;
+}
+
+/* 経歴 */
+.career-container{
+    margin-top: 8px;
+}
+.career-wrapper{
+    width: 980px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.75);
+    margin: 0 auto;
+    align-items: center;
+    padding: 70px 0;
+}
+.career-box-container{
+    width: 80%;
+    margin: 80px auto 40px auto;
+}
+.career-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    display: grid;
+	gap: 1px;
+	grid-auto-flow: column;
+    grid-template-columns: 1fr 0.5fr 3fr 5fr;
+}
+.career-mark{
+    font-size: 18px;
+    color: #ffb2b2;
+    position: relative;
+    z-index: 4;
+}
+.career-mark::before{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: calc(100% + 3em);
+    background-color: #ffb2b2;
+    position: absolute;
+    top: -1.5em;
+    left: 0.5em;
+    z-index: 1;
+}
+.career-year h2{
+    font-size: 21px;
+    font-weight: 600;
+}
+.career-mark h3{
+    color: #ffb2b2;
+}
+.career-name h2{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+.career-point{
+    font-size: 16px;
+    border: rgb(252, 192, 162) dotted 2px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    margin-right: 50px;
+}
+
+/* contactボタン */
+.transition-btn{
+    width: 980px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.75);
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+.transition-btn a{
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 50px; 
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    float: right;
+    border: #ff6160 solid 3px;
+    color: #ff6160 ;
+    font-size: 22px;
+}
+.transition-btn a::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 102%;
+    height: 102%;
+    background: rgba(247, 187, 188, 0.3);
+    z-index: 0;
+}
+.transition-btn p{
+    margin-right: 10px;
+    font-size: 24px;
+    line-height: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2em;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+.transition-btn img{
+    height: 60%;
+    width: auto;
+    display: block; 
+    padding-top: 3px;  
+}
+
+footer{
+    height: 100px;
+    background-color: #fff0cc;
+}
+
+/* -----mobile---- */
+@media screen and (max-width: 768px) {
+  h1{
+    font-size: 24px;
+}
+  h3{
+    font-size: 16px;
+  }
+  p{
+      font-size: 14px;
+  }
+/* ヘッダー */
+  .naviber{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+    padding-left: 10px;
+  }
+  .navi{
+    display: none;
+  }
+  #menu__toggle {
+  opacity: 0;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+  .menu__btn {
+    position: fixed;
+    margin: 0 auto;
+    top: 30px;
+    right: 10px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #969590;
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #fde6e6;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #7E6F70;
+    font-family: Yu Mincho, "游明朝", "Hiragino Mincho ProN", "MS PMincho", serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  .intro-container,
+  .skill-container,
+  .career-container, 
+  .message-container{
+    width: 100% !important;
+    max-width: 100vw;
+    min-width: 0;
+    margin-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* トップ */
+  .intro-wrapper,
+  .name-area,
+  .coment-area,
+  .others-area 
+  {
+    width: 100% !important;
+    max-width: 100vw;
+    min-width: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .name-area .myimg {
+    width: 80px;
+    height: 80px;
+  }
+  .name-area h2 {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+  }
+  .coment-area p,
+  .others-area p {
+    font-size: 14px;
+    text-align: center;
+  }
+  /* スキル */
+  .skill-wrapper,
+  .skill-box-wrapper,
+  .design-skill,
+  .website-skill,
+  .other-skill,
+  .skill-box,
+  .skill-coment {
+    width: 100% !important;
+    max-width: 100vw;
+    min-width: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .skill-wrapper {
+    padding: 30px 0;
+  }
+  .skill-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+  .design-skill,
+  .website-skill,
+  .other-skill {
+    height: auto;
+    margin: 8px 0;
+  }
+  .skill-box {
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .skill-box img {
+    width: 60px;
+    height: 60px;
+    padding-top: 8px;
+  }
+  .skill-box h2 {
+    font-size: 21px;
+    padding: 0 20px 0;
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
+  .skill-box h2:before,
+  .skill-box h2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: #725926;
+}
+  .skill-box h2:before {
+      left: -10px;
+  }
+  .skill-box h2::after {
+      right: -10px; 
+  }
+  .skill-box p,
+  .skill-coment p,
+  .skill-textarea {
+    font-size: 15px;
+    text-align: center;
+  }
+  .skill-textarea {
+    padding: 20px 10px;
+    font-size: 16px;
+    width: 90%;
+  }
+  .skill-textarea h2{
+    font-size: 20px;
+  }
+  .skill-textarea h2::after{
+    width: 145px;
+  }
+  /* 経歴 */
+  .career-wrapper,
+  .career-box-container {
+    width: 100% !important;
+    max-width: 100vw;
+    min-width: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .career-wrapper{
+    padding: 30px 0;
+  }
+  .career-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .career-mark {
+    display: none !important;
+  }
+  .career-year h2{
+    margin-bottom: 8px;
+    font-style: italic;
+    color: #97958F;
+    font-size: 24px;
+  }
+  .career-name,
+  .career-text{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .career-name {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .career-text p,
+  .career-point p {
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 4px;
+  }
+  .career-point {
+    width: 70%;
+  }
+  /* contactボタン */
+  .message-container,
+  .transition-btn {
+    width: 100% !important;
+    max-width: 100vw;
+    min-width: 0;
+    margin: 10px auto;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
